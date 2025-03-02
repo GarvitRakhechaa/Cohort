@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 7</title>
+</head>
+
+<body>
+    <!--
+    1  Add a phonenumber field to the form that accepts only numbers.
+    2  Include a textarea I for additional comments.
+    3  Add validation to ensure the password is at least 8 characters long using the pattern attribute.
+    4  Style the form to center it on the page and add a background color. Styling part is optional but I Rrecommend to try it
+    -->
+    <div style="display: flex; justify-content: center;">
+        <form
+            style="display: flex; background-color: aquamarine; flex-direction: column; width: 400px; align-items: center; "
+            action="mailto:garvitrakhecha786@gmail.com">
+            <label style="width: 200px;" for="Phone">Enter Mobile Number</label>
+            <input style="width: 200px;" type="text" name="" id="Phone">
+            <label style="width: 200px;" for="text">enter your message</label>
+            <textarea name="" id="text"></textarea>
+            <label style="width: 200px;" for="password">Enter password</label>
+            <input style="width: 200px;" type="password" name="" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}"
+                id="password"> <!-- this is not type of that i can remeber -->
+
+            <button style="padding: 5px 10px; margin-top: 10px;" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
