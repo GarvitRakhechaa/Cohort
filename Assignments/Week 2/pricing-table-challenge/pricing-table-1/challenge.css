@@ -1,0 +1,126 @@
+/* Challenge CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* color: white; */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f5f5;
+}
+
+.container {
+  /* Add your styles here */
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px ;
+}
+
+h1 {
+  font-size: 2.5rem;
+  
+}
+
+.pricing-heading {
+  /* Add your styles here */
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 27px;
+}
+
+.pricing-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center
+  ;
+  
+}
+
+.pricing-card {
+  /* Add your styles here */
+  /* background-color: blueviolet; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  gap: 20px;
+  width: 24rem;
+  height: fit-content;
+  padding: 2rem;
+  border: orange solid 1px;
+  /* margin-top:3rem; */
+  
+}
+
+.pricing-card:hover {
+  /* Add your styles here */
+  /* transform: scale(1.1); */
+  box-shadow: 1px 1px 10px 1px orange;
+  transition: 0.5s ease-in-out;
+}
+
+.pricing-card.popular {
+  padding: 2rem;
+  border: solid #ffa500 2px;
+  
+}
+
+.popular-badge {
+  /* Add your styles here */
+  background-color: #ff7800;
+  padding: 10px 15px;
+  border-radius: 40px;
+  position: absolute;
+  top: 6.3rem;
+  z-index: 20;
+  color: white;
+}
+
+.price {
+  /* Add your styles here */
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.period {
+  /* Add your styles here */
+  columns: #666767;
+}
+
+.features {
+  margin-top: 1.5rem;
+  /* background-color: #ffa500; */
+  /* Add your styles here */
+  width: 16rem;
+  list-style: none;
+  list-style-image: url(assets/hot-chai.svg);
+  
+}
+
+.features li {
+  /* Add your styles here */
+  text-align: center;
+  padding: 0.7rem;
+}
+
+.subscribe-btn {
+  /* Add your styles here */
+  padding: 10px 15px;
+  border-radius: 40px;
+  background-color: orange;
+  
+}
+
+.subscribe-btn:hover {
+  /* Add your styles here */
+  box-shadow: 1px 1px 10px 1px rgb(255, 0, 0);
+  /* transition: 1s ease-in-out; */
+}
