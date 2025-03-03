@@ -1,0 +1,144 @@
+/* Challenge CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Georgia", serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.header {
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  align-items: center;
+  color: #8b4513;
+  /* Define header styles here */
+}
+
+.logo {
+  display: flex;
+  align-items: center; gap: 1.2rem;
+  /* Define logo styles here */
+}
+
+.logo img {
+  padding: 2px;
+  border-radius: 50%;
+  border: 2px solid #8b4513;
+  /* Define image styles within the logo here */
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #8b4513;
+  margin-right: 2rem;
+  /* Define navigation link styles here */
+}
+
+.nav-menu a:hover {
+  /* Define hover styles for navigation links here */
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+              url(assets/chaipatti.png); 
+              background-position: center;
+              background-size: cover;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  height: 80vh;
+  justify-content: center;
+  
+  /* Define hero section styles here */
+}
+
+.hero-text h1 {
+  
+  font-size: 4.5rem;
+  /* Define styles for h1 in hero-text here */
+}
+
+.hero-text p {
+  font-size: 2.2rem;
+  margin-top: 3rem;
+  /* Define styles for paragraph in hero-text here */
+}
+
+.shop-button {
+  color: white;
+  padding: 20px 50px;
+  font-size: x-large;
+  border-radius: 30px;
+  background-color: #8b4513;
+  margin-top: 3rem;
+  /* Define shop button styles here */
+}
+
+.shop-button:hover {
+  /* Define hover styles for shop button here */
+}
+
+.tea-collection {
+  /* background-color: aqua; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* Define tea collection section styles here */
+}
+
+.tea-collection h2 {
+  font-size: 2rem;
+  color: #8b4513;
+  /* Define styles for h2 in tea collection here */
+}
+
+.tea-cards {
+  /* background-color: blueviolet; */
+  display: flex;
+  flex-wrap: wrap;
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  gap: 3rem;
+  justify-content: space-around;
+  padding: 2rem;
+  max-width: 70rem;
+  margin: auto;
+
+  
+
+
+  /* Define tea cards container styles here */
+}
+
+.tea-card {
+  /* background-color: aqua; */
+  /* border: 2px black solid; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 17.5rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 4px #696766;
+  /* Define styles for each tea card here */
+}
+
+.tea-card h3 {
+  color: #8b4513;
+  /* Define styles for tea card headings here */
+}
+
+.tea-card p {
+  color: #696766;
+  /* Define styles for tea card paragraph text here */
+}

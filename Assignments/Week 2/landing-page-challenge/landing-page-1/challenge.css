@@ -1,0 +1,158 @@
+/* Challenge CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* color: white; */
+  /* background-color: black; */
+
+}
+
+/* Basic styles */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  max-width: 95vw;
+  margin: auto;
+  background-color: black;
+}
+
+/* Navbar styles */
+.navbar {
+  /* Add styles for navbar */
+  background-color: #333333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 45px;
+  color: white;
+}
+
+.logo {
+  
+  /* background-color: #333333; */
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  gap: 0.5rem;
+  /* Add styles for the logo */
+}
+
+.logo img {
+  border-radius: 50%;
+  /* Add styles for logo image */
+}
+
+.nav-links {
+  /* background-color: #333333; */
+}
+.nav-links a {
+  text-decoration: none;
+  margin-left: 1.7rem;
+  color: white;
+  /* Add styles for nav links */
+  
+
+}
+
+.nav-links a:hover {
+  /* Add hover styles for nav links */
+  /* transform: scale(1.8); */
+}
+
+/* Hero section styles */
+.hero {
+  /* Add styles for hero section */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+              url(assets/chaigym.png);
+  /* background-image: url(assets/chaigym.png); */
+  height: 90vh;
+  background-position: 10%;
+  background-size: 110%;
+  
+  
+}
+
+
+.hero-content {
+  /* Add styles for hero content */
+  /* background-color: black; */
+  /* opacity: 65%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 3rem;
+  /* justify-content: center; */
+  gap: 1.5rem;
+  /* background-color: blue; */
+  
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  /* Add styles for hero heading */
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  /* Add styles for hero paragraph */
+}
+
+.cta-button {
+  padding: 15px 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: hsl(28, 100%, 50%);
+  color: black;
+  font-size: 1rem;
+  /* Add styles for CTA button */
+}
+
+.cta-button:hover {
+  /* Add hover styles for CTA button */
+  box-shadow: 2px 2px 2px 2px #7fbcaf;
+}
+
+/* Features section styles */
+.features {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  width: 85rem;
+  /* margin-top: 10rem; */
+  margin: auto;
+  padding: 2rem 4rem;
+  border-radius: 40px;
+  
+  /* Add styles for features section */
+}
+
+.feature {
+  border: 1px solid #ff7902;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 10px;
+  padding: 10px 35px;
+  
+  /* Add styles for each feature block */
+}
+
+.feature h3 {
+  color: #ff7902;
+  font-weight: bold;
+  /* Add styles for feature heading */
+}
+
+.feature p {
+  font-size: 1rem;
+  /* Add styles for feature paragraph */
+}
