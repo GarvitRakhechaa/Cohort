@@ -10,6 +10,6 @@
 ![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=flat&logo=git)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
-## [Week 1 : HTML Challenges](./Assignments/Week%200/)
+## [Week 0 : HTML Challenges](./Assignments/Week%200/)
 ## [Week 1 : Basic CSS Challenges](./Assignments/Week%201/)
-## [Week 1 : Advanced CSS Challenges](./Assignments/Week%202/)
+## [Week 2 : Advanced CSS Challenges](./Assignments/Week%202/)
