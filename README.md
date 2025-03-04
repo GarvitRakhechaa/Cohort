@@ -13,3 +13,4 @@
 ## [Week 0 : HTML Challenges](./Assignments/Week%200/)
 ## [Week 1 : Basic CSS Challenges](./Assignments/Week%201/)
 ## [Week 2 : Advanced CSS Challenges](./Assignments/Week%202/)
+## [Week 3 : Basix javascript Challenges](./Assignments/Week%203/)
