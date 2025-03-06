@@ -44,3 +44,45 @@ h4{
     
     color: #f8961e
 }
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 8rem;
+    }
+    h4 {
+        font-size: 3rem;
+    }
+    #clock {
+        padding: 1.5rem 2.5rem;
+        border-radius: 3rem;
+    }
+}
+
+/* Small screens (mobiles) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 6rem;
+    }
+    h4 {
+        font-size: 2rem;
+    }
+    #clock {
+        padding: 1rem 2rem;
+        border-radius: 2rem;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 4rem;
+    }
+    h4 {
+        font-size: 1.5rem;
+    }
+    #clock {
+        padding: 0.8rem 1.5rem;
+        border-radius: 1.5rem;
+    }
+}
