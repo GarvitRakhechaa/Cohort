@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Review Collector</title>
+</head>
+
+<body>
+    <h1 style="text-align: center; margin-bottom: 2rem;">Review Collector</h1>
+    <div id="main">
+            <div id="data">
+                <h2>We Value your precious Feedback</h2> <!--esko change karna hai-->
+                <div id="info">
+                    <label id="nameLabel" for="name">Name</label>
+                    <input type="text" name="name" id="name" autocomplete="off">
+
+                    <div id="stars">
+                        <span class="imogiees" id="1">😡</span> 
+                        <span class="imogiees" id="2">😞</span> 
+                        <span class="imogiees" id="3">😐</span> 
+                        <span class="imogiees" id="4">🙂</span> 
+                        <span class="imogiees" id="5">😃</span>
+                    </div>
+                    <div id="reviewInput">
+                        <label id="titleLabel" for="title">Review Title</label>
+                        <input type="text" name="title" id="title" autocomplete="off">
+                        <label id="reviewLabel" for="review">Write your Review</label>
+                        <input type="text" name="review" id="review" autocomplete="off">
+                        <!-- <textarea name="review" id="review" autocomplete="off"></textarea> -->
+                    </div>
+                    <button id="Submit">Submit</button>
+                </div>
+        </div>
+        <div id="reviewSections">
+            <h2>Your Reviews will come here</h2>
+            <div id="reviewSection"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
