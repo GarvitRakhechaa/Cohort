@@ -1,0 +1,14 @@
+button {
+    padding: 10px 10px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+
+#container {
+    display: flex;
+
+    width: 120px;
+    background-color: aqua;
+    flex-wrap: wrap;
+    text-align: center;
+} 

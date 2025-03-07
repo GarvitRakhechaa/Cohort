@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    
+    
+    <title>BMI/BEP calculator</title>
+</head>
+<body>
+    <div id="container">
+        <div id="bmicontainer">
+            <h1>BMI calculator</h1>
+            <div id="imageContainer">
+                <img width="150" src="./assets/man.png" alt="">
+                <img width="150" src="./assets/woman.png" alt="">
+            </div>
+            
+            <!-- <label for="age">Age</label>
+            <input type="number" name="age" id="age"> -->
+            <label  id="heightlabel" for="height">Height in meter</label>
+            <input class="input" required type="number" name="height" placeholder="enter your height" id="height">
+            <label id="weightlabel" for="weight">Weight in kg</label>
+            <input class="input" required type="number" placeholder="enter your weight" name="weight" id="weight">
+            
+            
+
+            <button type="submit" id="bmi">Calculate BMI</button>
+            <h2>Result will come here</h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

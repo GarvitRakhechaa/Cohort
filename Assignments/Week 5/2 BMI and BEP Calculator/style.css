@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.google.com/specimen/Pacifico?categoryFilters=Feeling:%2FExpressive%2FCute');
+@import url('https://fonts.google.com/specimen/Orbitron?categoryFilters=Feeling:%2FExpressive%2FFuturistic');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif ,cursive;
+    
+}
+
+#container {
+    background-color: #4a4e69;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#bmicontainer {
+    padding: 2rem 3rem;
+    background-color: #f2e9e4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border: 1px red solid;
+}
+
+.text, #heightlabel, #weightlabel {
+    font-size: x-large;
+    margin: 0.1rem;
+}
+
+.input, #height, #weight {
+    padding: 5px 10px;
+    border-radius: 1rem;
+    margin: 0.5rem 0;
+}
+
+.addition, button {
+    padding: 0.5rem 1rem;
+    border: none;
+    margin: 0.5rem 0;
+    background-color: #4a4e69;
+    color: white;
+}
+
+button {
+    border-radius: 3rem;
+}
+
+button:disabled{
+    background-color: #6e656d;
+    text-decoration: line-through;
+    
+}
