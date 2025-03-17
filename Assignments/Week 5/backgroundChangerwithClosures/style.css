@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    border-radius: 1.5rem;
+    
+}
+#allButtons {
+    background-color: #004d40;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+#colorInput {
+    padding: 0.75rem 1rem;
+    background-color: #e0f7fa;
+    border: none;
+    border-radius: 0.5rem;
+    outline: none;
+    transition: all 0.3s;
+}
+
+#colorInput:focus {
+    background-color: #b2ebf2;
+    box-shadow: 0 0 5px #00796b;
+}
+
+#mainButton {
+    padding: 0.75rem 1.5rem;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.mainnButton {
+    padding: 0.75rem 1.5rem;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#mainButton:hover {
+    background-color: #004d40;
+    box-shadow: 0 0 5px #004d40;
+}

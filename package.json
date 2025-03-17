@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "loadsh": "^0.0.4",
+    "puppeteer": "^24.4.0",
+    "puppeteer-core": "^24.4.0"
+  },
+  "type": "module"
+}

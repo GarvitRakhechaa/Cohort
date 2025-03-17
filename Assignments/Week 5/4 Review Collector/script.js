@@ -8,6 +8,9 @@ let mainImogies = document.querySelectorAll('.imogiees')
 let str = ""
 
 
+document.addEventListener('DOMContentLoaded',loadFromLocalStorage)
+
+
 mainImogies.forEach(emogy => emogy.addEventListener("click", function () {
         str = ""
         mainImogies.forEach(e => e.classList.remove("circle"));
@@ -21,18 +24,8 @@ mainImogies.forEach(emogy => emogy.addEventListener("click", function () {
 }));
 Submit.addEventListener("click", updateReview)
 
-function updateReview() {
-        let now = new Date()
-        let TITLE = title.value
-        let REVIEW = review.value
-        let NAME = Name.value
-        let EMOGY = str
-
-        if (TITLE.trim() === "" || EMOGY.trim() === "" || REVIEW.trim() === "" || NAME.trim() === "") {
-                alert("All values should be filled");
-        }
-        else {
-                let ReviewInfo = document.createElement('div')
+function createrReviewElement(now,TITLE,REVIEW,NAME,EMOGY){
+        let ReviewInfo = document.createElement('div')
                 ReviewInfo.classList = "reviewInfo"
                 let h1 = document.createElement('h1')
                 let imogie = document.createElement('h1')
@@ -58,11 +51,38 @@ function updateReview() {
                 ReviewInfo.appendChild(p1)
                 ReviewInfo.appendChild(h4)
                 ReviewInfo.appendChild(p2)
+                return ReviewInfo
+}
+
+function updateReview() {
+        let now = new Date()
+        let TITLE = title.value
+        let REVIEW = review.value
+        let NAME = Name.value
+        let EMOGY = str
+
+        if (TITLE.trim() === "" || EMOGY.trim() === "" || REVIEW.trim() === "" || NAME.trim() === "") {
+                alert("All values should be filled");
+        }
+        else {
+                const ReviewInfo = createrReviewElement(now,TITLE,REVIEW,NAME,EMOGY)
                 console.log(ReviewInfo)
                 reviewSection.prepend(ReviewInfo)
 
         }
 
+        savetoLocalStorage({})
+} 
 
+function savetoLocalStorage(now,title,name,review,emogy){
+        localStorage.setItem("now", now.toLocaleDateString())
+}
+
+function loadFromLocalStorage(){
+        // console.log(localStorage.getItem("now"))
+        let result = (localStorage.getItem("now"))
+        console.log((typeof result))
+
+        createrReviewElement(result)
 
 }
