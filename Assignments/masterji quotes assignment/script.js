@@ -14,8 +14,8 @@ const natureImageUrls = [
     'https://images.pexels.com/photos/158607/cairn-fog-mystical-background-158607.jpeg',
     'https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg',
     'https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg',
-    'https://images.pexels.com/photos/349758/pexels-photo-349758.jpeg',
-    'https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg',
+    // 'https://images.pexels.com/photos/349758/pexels-photo-349758.jpeg',
+    // 'https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg',
     'https://images.pexels.com/photos/355321/pexels-photo-355321.jpeg',
     'https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg',
     'https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg',
@@ -27,7 +27,7 @@ const natureImageUrls = [
     'https://images.pexels.com/photos/158607/cairn-fog-mystical-background-158607.jpeg',
     'https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg',
     'https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg',
-    'https://images.pexels.com/photos/349758/pexels-photo-349758.jpeg',
+    // 'https://images.pexels.com/photos/349758/pexels-photo-349758.jpeg',
     'https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg',
     'https://images.pexels.com/photos/355321/pexels-photo-355321.jpeg',
     'https://images.pexels.com/photos/1563356/pexels-photo-1563356.jpeg',
@@ -40,7 +40,7 @@ const natureImageUrls = [
     'https://images.pexels.com/photos/158607/cairn-fog-mystical-background-158607.jpeg',
     'https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg'
   ];
-  
+
 
 
 
@@ -49,7 +49,10 @@ function getQuote(){
     url2 = "https://source.unsplash.com/random"
 
     let randomNumber = Math.floor((Math.random() * 20))
+    console.log(randomNumber)
     quoteContainer.style.backgroundImage  =   `url(${natureImageUrls[randomNumber]})`
+    console.log(natureImageUrls[randomNumber]);
+    
         quoteContainer.style.backgroundSize = "cover"
         quoteContainer.style.backgroundPosition = "center"
     fetch(url)
