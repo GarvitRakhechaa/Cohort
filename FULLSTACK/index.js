@@ -1,9 +1,22 @@
 import express from "express"
+import dotenv from "dotenv"
+import cors from "cors"
+import db from "./Utils/Db.js" 
 
 const app = express()
-const port = 3000
+app.use(cors({
+    origin: "http://localhost:3000",
+    methods: ['GET', 'POSt', 'DELETE','OPTIONS'],
+    allowedHeaders: ['Content-Type', "Authorization"]
+}))
+app.use(express.json()) // es se express data accept hota hai
+app.use(express.urlencoded({extended: true})) // url ko accept karne ke liye
 
-app.get("/", (req,res) => {
+dotenv.config()
+const port = process.env.PORT || 4000   
+
+db()
+app.get("/", (req,res) => { 
     res.send("Backend Started")
 })
 
